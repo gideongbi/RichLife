@@ -1,6 +1,8 @@
-import { Link ,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/design.png";
-
+import AGB from "./AGB"; // Import, falls AGB in der Komponente genutzt wird
+import Datenschutz from "./Datenschutz"; // Import, falls Datenschutz in der Komponente genutzt wird
+import Impressum from "./Impressum"; // Import, falls Impressum in der Komponente genutzt wird
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -29,13 +31,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Pages</h3>
             <ul className="text-gray-600">
               <li>
-                <button onClick={() => handleLinkClick("/")}>Home</button>
+                <Link to="/" onClick={() => handleLinkClick("/")}>Home</Link>
               </li>
               <li>
-                <button onClick={() => handleLinkClick("/kenstar")}>About Me</button>
-              </li>
-              <li>
-                <button onClick={() => handleLinkClick("/legal")}>Legal</button>
+                <Link to="/kenstar" onClick={() => handleLinkClick("/kenstar")}>About Me</Link>
               </li>
             </ul>
           </div>
@@ -57,13 +56,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="text-gray-600">
-            <li><Link to="/legal#agb">AGB</Link></li> {/* Link zu den AGB */}
-              <li><Link to="/legal#tos">Terms of Service</Link></li> {/* Link zu den Nutzungsbedingungen */}
-              <li><Link to="/legal#cok">Cookie Policy</Link></li> {/* Link zur Cookie-Richtlinie */}
+              <li><Link to="/AGB" onClick={() => handleLinkClick("/AGB")}>AGB</Link></li> {/* Link zu den AGB */}
+              <li><Link to="/Datenschutz" onClick={() => handleLinkClick("/Datenschutz")}>Datenschutz</Link></li> {/* Link zu den Nutzungsbedingungen */}
+              <li><Link to="/Impressum" onClick={() => handleLinkClick("/Impressum")}>Impressum</Link></li> {/* Link zur Cookie-Richtlinie */}
             </ul>
           </div>
         </div>
-        <h1 className="text-[15vh] sm:text-[25vh] text-center pt-5 font-bold bg-clip-text text-transparent bg-gradient-to-b from-grund to-web ">
+        <h1 className="text-[15vh] sm:text-[25vh] text-center pt-5 font-bold bg-clip-text text-transparent bg-gradient-to-b from-grund to-web">
           Rich Life
         </h1>
       </div>

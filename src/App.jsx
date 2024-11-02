@@ -9,6 +9,9 @@ import Footer from "./components/Footer";
 import NavigationButtons from "./components/NavigationButtons";
 import FAQ from "./components/FAQ";
 import Kenstar from "./components/Kenstar"; // Importiere Kenstar
+import AGB from './components/AGB'; // Importiere AGB
+import Datenschutz from './components/Datenschutz'; // Importiere Datenschutz
+import Impressum from './components/Impressum'; // Importiere Impressum
 
 const App = () => {
   return (
@@ -22,7 +25,7 @@ const App = () => {
           element={
             <>
               <HeroSection /> {/* HeroSection nur auf der Startseite */}
-                <Cards />
+              <Cards />
               <div className="bg-white">
                 <Services />
                 <AboutMe />
@@ -37,7 +40,10 @@ const App = () => {
         />
 
         {/* Route für die eigenständige Kenstar-Seite */}
-        <Route path="/kenstar" element={<Kenstar />} /> 
+        <Route path="/kenstar" element={<Kenstar />} />
+        <Route path="/AGB" element={<AGB />} /> {/* Route für AGB-Seite */}
+        <Route path="/Datenschutz" element={<Datenschutz />} /> {/* Route für Datenschutz-Seite */}
+        <Route path="/Impressum" element={<Impressum />} /> {/* Route für Impressum-Seite */}
       </Routes>
 
       {/* Footer bleibt auf allen Seiten */}

@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 }, // Startzustand: etwas unterhalb mit geringer Sichtbarkeit
+    hidden: { opacity: 0, y: 50 }, // Ausgangszustand für Scroll-Animation
     visible: {
       opacity: 1,
-      y: 0, // Zielzustand: volle Sichtbarkeit, Position normal
+      y: 0,
       transition: {
-        duration: 1.2, // Längere, sanfte Dauer
-        ease: "easeInOut", // Gleichmäßige Bewegung
+        duration: 1.2,
+        ease: "easeInOut",
       },
     },
   };
@@ -33,11 +33,12 @@ const Services = () => {
           {checklistItems.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-white relative p-8 shadow-lg rounded-xl transform hover:scale-105 transition duration-300"
+              className="bg-white relative p-8 shadow-lg rounded-xl transition-transform duration-300"
               variants={itemVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }} // Startet, wenn 50% sichtbar sind
+              viewport={{ once: true, amount: 0.5 }}
+              whileHover={{ scale: 1.05 }} // Hover-Effekt in framer-motion integriert
             >
               {/* Nummer und Icon */}
               <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-web text-white h-16 w-16 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
