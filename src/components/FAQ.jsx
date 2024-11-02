@@ -3,12 +3,33 @@ import { faqs } from '../constants/index';
 import { SquareArrowUp } from "lucide-react";
 
 const FAQ = () => {
-  // Funktion, die nach oben scrollt
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Sanftes Scrollen
-    });
+  // Smooth Scroll Funktion zum Scrollen nach oben
+  const smoothScrollToTop = () => {
+    smoothScrollTo(0); // Scrollt nach oben, Zielposition ist 0 (ganz oben)
+  };
+
+  // Smooth Scroll Funktion, die eine Zielposition und Dauer übergibt
+  const smoothScrollTo = (targetPosition, duration = 1700) => {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    const animation = (currentTime) => {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    };
+
+    const ease = (t, b, c, d) => {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+
+    requestAnimationFrame(animation);
   };
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -69,7 +90,7 @@ const FAQ = () => {
       <div className="relative">
         {/* Scroll-to-Top Button */}
         <button
-          onClick={scrollToTop}
+          onClick={smoothScrollToTop} // Aufruf der Smooth-Scroll-Funktion
           className="absolute bottom-[-20vh] right-5 lg:right-[-20vh] xl:right-[-35vh] rounded-xl p-3 bg-grund text-white font-semibold hover:bg-web transition-all duration-300"
         >
           <SquareArrowUp className="w-6 h-6" /> {/* Icon rechts neben dem Text */}

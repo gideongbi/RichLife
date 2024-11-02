@@ -8,17 +8,17 @@ export const checklistItems = [
     {
         title: "Budgetplanung",
         description:
-         "Erhalte Kontrolle über Deine Finanzen. Wir optimieren Dein Budget für mehr finanzielle Freiheit."
+         "Erhalte Kontrolle über deine Finanzen. Wir optimieren dein Budget für mehr finanzielle Freiheit."
     },
     {
         title: "Vorsorgeplanung",
         description:
-         "Schütze Dich und Deine Familie optimal vor Risiken. Wir planen Deine persönliche Absicherung gemeinsam."
+         "Schütze dich und deine Familie optimal vor Risiken. Wir planen deine persönliche Absicherung gemeinsam."
     },
     {
         title: "Vermögensplanung",
         description:
-         "Ich helfe Dir, Vermögen gezielt aufzubauen und Deine finanziellen Ziele sicher zu erreichen."
+         "Ich helfe dir, Vermögen gezielt aufzubauen und deine finanziellen Ziele sicher zu erreichen."
     },
     {
         title: "Beratung für Einsteiger",
