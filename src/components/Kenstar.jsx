@@ -4,34 +4,12 @@ import { HashLink } from 'react-router-hash-link'; // Verwende HashLink für Ank
 import { SquareArrowUp } from "lucide-react";
 
 const Kenstar = () => {
-  // Smooth Scroll Funktion zum Scrollen nach oben
-  const smoothScrollToTop = () => {
-    smoothScrollTo(0); // Scrollt nach oben, Zielposition ist 0 (ganz oben) und Dauer ist 1700ms
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Sanftes Scrollen
+    });
   };
-
-    // Smooth Scroll Funktion, die eine Zielposition und Dauer übergibt
-    const smoothScrollTo = (targetPosition, duration = 1700) => {
-      const startPosition = window.pageYOffset;
-      const distance = targetPosition - startPosition;
-      let startTime = null;
-  
-      const animation = (currentTime) => {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-      };
-  
-      const ease = (t, b, c, d) => {
-        t /= d / 2;
-        if (t < 1) return (c / 2) * t * t + b;
-        t--;
-        return (-c / 2) * (t * (t - 2) - 1) + b;
-      };
-  
-      requestAnimationFrame(animation);
-    };
 
   return (
     <div id="kenstar" className="w-full p-8 lg:p-16 bg-white text-gray-800">
@@ -108,8 +86,8 @@ const Kenstar = () => {
       {/* Scroll to top button */}
       <div className="relative mt-8">
         <button
-          onClick={smoothScrollToTop} // Aufruf der Smooth-Scroll-Funktion
-          className="absolute bottom-[-2vh] right-0 xl:right-20 lg:right-30 bg-grund p-3 rounded-lg shadow-lg text-white hover:bg-web transition-all duration-300"
+          onClick={scrollToTop}
+          className="absolute bottom-[-2vh] right-0 xl:right-20 lg-right-30 bg-grund p-3 rounded-lg shadow-lg text-white hover:bg-web transition-all duration-300"
         >
           <SquareArrowUp className="h-6 w-6" />
         </button>

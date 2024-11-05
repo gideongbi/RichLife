@@ -59,7 +59,7 @@ const Impressum = () => {
         Meine E-Mail-Adresse finden Sie oben im Impressum.
       </p>
 
-      <h2 className="flex justify-center text-2xl font-semibold mt-4 mb-2">Verbraucherstreitbeilegung/ Universalschlichtungsstelle</h2>
+      <h2 className="text-2xl font-semibold mt-4 mb-2">Verbraucherstreitbeilegung/ Universalschlichtungsstelle</h2>
       <p>
         Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
       </p>

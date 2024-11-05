@@ -27,9 +27,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
-            <Link to={"/"}>
+            <a href="/">
             <img className="h-[6vh] w-[11vh]" src={logo} alt="logo" />
-            </Link>
+            </a>
           </div>
 
           {/* Navigation Links - Zentrieren */}
