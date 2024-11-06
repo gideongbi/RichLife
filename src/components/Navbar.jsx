@@ -76,36 +76,41 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Drawer */}
-        {mobileDrawerOpen && (
+{mobileDrawerOpen && (
   <div className="backdrop-blur-lg bg-white/1 text-white inset-0 h-screen w-screen z-10 flex flex-col items-center lg:hidden">
-    {/* Liste gleichmäßig verteilen, Padding oben und unten für gleichen Abstand */}
     <ul className="w-full h-full flex flex-col items-center justify-evenly py-32">
       {/* Dynamisches Mapping der navItems */}
       {navItems.map((item, index) => (
-        <li key={index} className="text-center p-2 text-xl bg-web rounded-full w-1/3">
-          <Link to={item.href} onClick={() => setMobileDrawerOpen(false)}>
+        <li key={index} className="w-1/3">
+          <Link 
+            to={item.href} 
+            onClick={() => setMobileDrawerOpen(false)}
+            className="block text-center p-2 text-xl bg-web rounded-full" 
+          >
             {item.label}
           </Link>
         </li>
       ))}
 
       {/* Instagram Text-Link */}
-      <li className="text-center p-2 text-xl bg-web rounded-full w-1/3">
+      <li className="w-1/3">
         <a
           href="https://www.instagram.com/richlife.original?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           target="_blank"
           rel="noopener noreferrer"
+          className="block text-center p-2 text-xl bg-web rounded-full"
         >
           Instagram
         </a>
       </li>
 
       {/* TikTok Text-Link */}
-      <li className="text-center p-2 text-xl bg-web rounded-full w-1/3">
+      <li className="w-1/3">
         <a
           href="https://www.tiktok.com/@richlife.original"
           target="_blank"
           rel="noopener noreferrer"
+          className="block text-center p-2 text-xl bg-web rounded-full"
         >
           TikTok
         </a>
@@ -113,6 +118,7 @@ const Navbar = () => {
     </ul>
   </div>
 )}
+
 
 
       </div>

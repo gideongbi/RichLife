@@ -54,7 +54,7 @@ const Cards = () => {
         <div className="border-t-2 border-gray-300 my-8"></div>
 
         <p className="text-xl text-neutral-500 mb-4">
-          Ich bin Kenstar Gehle, ausgebildeter Bankkaufmann mit fünf Jahren Erfahrung im Finanzsektor.
+          Ich bin Kenstar Gehle, ausgebildeter Bankkaufmann mit langjähriger Erfahrung im Finanzsektor.
           Mein Ziel ist es, komplexe Finanzthemen verständlich zu machen und gemeinsam mit dir maßgeschneiderte Lösungen zu entwickeln. 
         </p>
         <p className="text-xl text-neutral-500 mb-4">
