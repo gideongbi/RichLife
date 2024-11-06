@@ -82,9 +82,8 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-black">Kontaktiere uns</h2>
-          <p className="text-xl text-web mt-4">
-            Hast du Fragen oder möchtest du ein kostenloses Erstgespräch vereinbaren?
-            Fülle einfach das Formular aus und wir melden uns bei dir.
+          <p className="text-xl text-web mt-8">
+          Verliere keine Zeit mehr und nehme mit uns jetzt unverbindlich Kontakt auf!
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-start justify-between gap-12">
