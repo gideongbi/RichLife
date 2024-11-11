@@ -15,7 +15,7 @@ import Impressum from './components/Impressum'; // Importiere Impressum
 
 const App = () => {
   return (
-    <Router basename="/RichLife">
+    <Router >
       <Navbar /> {/* Navbar auf allen Seiten sichtbar */}
 
       <Routes>
