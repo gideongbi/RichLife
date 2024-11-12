@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -9,7 +9,7 @@ import Impressum from './components/Impressum';
 
 const App = () => {
   return (
-    <Router>
+    <Router> {/* Verwendung von HashRouter statt BrowserRouter */}
       <Navbar /> {/* Navbar auf allen Seiten sichtbar */}
       
       <div className="content">
