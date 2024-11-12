@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';  // importiere useNavigate
 
 import AboutMe from "./AboutMe";
 import HeroSection from "./HeroSection";
@@ -10,12 +9,6 @@ import NavigationButtons from "./NavigationButtons";
 import FAQ from "./FAQ";
 
 const Home = () => {
-  const navigate = useNavigate();  // useNavigate Hook verwenden
-
-  const navigateToKenstar = () => {
-    navigate('/kenstar');  // navigiert zur '/kenstar' Seite
-  };
-
   return (
     <div>
       {/* Hero Section - Hauptbereich der Startseite */}
@@ -40,14 +33,6 @@ const Home = () => {
       
       {/* Navigationsbuttons */}
       <NavigationButtons />
-
-      {/* Beispiel für einen Navigationsbutton, der zu einer anderen Seite führt */}
-      <button 
-        onClick={navigateToKenstar} 
-        className="btn-primary"
-      >
-        Gehe zu Kenstar
-      </button>
     </div>
   );
 }
