@@ -83,7 +83,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-black">Kontaktiere uns</h2>
           <p className="text-xl text-web mt-8">
-          Verliere keine Zeit mehr und nehme jetzt unverbindlich Kontakt mit uns auf!
+          Verliere keine Zeit mehr und nehme mit uns jetzt unverbindlich Kontakt auf!
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-start justify-between gap-12">
