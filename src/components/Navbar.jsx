@@ -5,23 +5,18 @@ import { useState } from "react";
 import { useNavigate, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
-
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
-
   // Toggle-Funktion für das mobile Menü
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
-
   const navigate = useNavigate();
-
   const handleLinkClick = (path) => {
     navigate(path);
     window.scrollTo(0, 0); // Scrollt die Seite ganz nach oben
     setMobileDrawerOpen(false); // Schließt das mobile Drawer-Menü
   };
-
   return (
     <nav className={`z-50 py-2 backdrop-blur-lg border-b border-neutral-700/80 ${mobileDrawerOpen ? 'fixed w-full' : 'sticky top-0'}`}>
       <div className="container mx-auto relative text-sm">
@@ -32,7 +27,6 @@ const Navbar = () => {
               <img className="h-[6vh] w-[11vh]" src={logo} alt="logo" />
             </Link>
           </div>
-
           {/* Navigation Links - Zentrieren */}
           <ul className="hidden lg:flex flex-1 justify-center space-x-12">
             {navItems.map((item, index) => (
@@ -49,7 +43,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-
           {/* Instagram und TikTok Icons (visible on large screens) */}
           <div className="hidden lg:flex items-center space-x-6">
             <a
@@ -67,7 +60,6 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faTiktok} className="text-neutral-700 hover:text-web opacity-50 hover:opacity-100 transition-opacity duration-300 h-8 w-8" />
             </a>
           </div>
-
           {/* Mobile Menu Button */}
           <div className="lg:hidden md:flex flex-col justify-end p-4">
             <button onClick={toggleNavbar}>
@@ -75,7 +67,6 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-
         {/* Mobile Drawer */}
         {mobileDrawerOpen && (
           <div className="backdrop-blur-lg bg-white/1 text-white inset-0 h-screen w-screen z-10 flex flex-col items-center lg:hidden">
@@ -91,7 +82,6 @@ const Navbar = () => {
                   </button>
                 </li>
               ))}
-
               {/* Instagram Text-Link */}
               <li className="w-1/3">
                 <a
@@ -103,7 +93,6 @@ const Navbar = () => {
                   Instagram
                 </a>
               </li>
-
               {/* TikTok Text-Link */}
               <li className="w-1/3">
                 <a
@@ -122,5 +111,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
