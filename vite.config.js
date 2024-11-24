@@ -5,8 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
    base: '/RichLife/',
   plugins: [react()],
-  server: {
-    // Diese Einstellung stellt sicher, dass alle Routen auf index.html zurückfallen
-    historyApiFallback: true
-  }
 })

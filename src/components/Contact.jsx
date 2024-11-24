@@ -177,6 +177,9 @@ const Contact = () => {
               >
                 Abschicken
               </button>
+              <p className="text-sm text-neutral-500 mt-2 text-center">
+    *Mit dem Absenden bestätigst du, dass du unsere <a href="/RichLife/AGB" className="text-web underline">AGB</a> gelesen und akzeptiert hast.
+  </p>
             </form>
           </div>
           <div className="hidden md:block md:w-1/2 pt-[27vh]">
