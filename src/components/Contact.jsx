@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import { Label } from './Label';
 import { Input } from './Input';
@@ -12,7 +13,7 @@ const Contact = () => {
     navigate(path);
     window.scrollTo(0, 0); // Scrollt die Seite ganz nach oben
   };
-  
+
   const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
