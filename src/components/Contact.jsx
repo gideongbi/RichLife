@@ -115,7 +115,7 @@ const Contact = () => {
               </div>
               <div>
                 <Label htmlFor="Telefon" className="block text-lg font-medium text-neutral-700">
-                  Telefon
+                  Telefonnummer
                 </Label>
                 <Input
                   type="text"

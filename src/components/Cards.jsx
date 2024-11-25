@@ -48,17 +48,16 @@ const Cards = () => {
       {/* Linker Bereich für den Text */}
       <div className="flex flex-col justify-center md:w-1/2 md:pr-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl text-left mb-8 text-web mt-20">
-          Dein erfahrener Finanzcoach
+        Du möchtest endlich deine Finanzen selbst in die Hand nehmen?
         </h2>
 
         <div className="border-t-2 border-gray-300 my-8"></div>
 
         <p className="text-xl text-neutral-500 mb-4">
-          Ich bin Kenstar Gehle, ausgebildeter Bankkaufmann mit langjähriger Erfahrung im Finanzsektor.
-          Mein Ziel ist es, komplexe Finanzthemen verständlich zu machen und gemeinsam mit dir maßgeschneiderte Lösungen zu entwickeln. 
+        Ich biete dir ein persönliches eins zu eins Coaching an und helfe dir dabei, deine persönliche Vision zu schärfen, langfristige Strategien zu entwickeln und ein solides finanzielles Fundament aufzubauen. 
         </p>
         <p className="text-xl text-neutral-500 mb-4">
-          Vertrauen, Transparenz und individuelle Betreuung sind die Basis für eine erfolgreiche und sichere Zusammenarbeit in der Finanzwelt!
+        Das eins zu eins Coaching wird auf maximal 100 Personen beschränkt sein, welche ich mit bedacht auswählen werde. 
         </p>
       </div>
 
