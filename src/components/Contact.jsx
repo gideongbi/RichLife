@@ -156,6 +156,7 @@ const Contact = () => {
                   className="w-full border-b-2 border-neutral-300 focus:border-web focus:outline-none p-3 text-lg bg-transparent rounded-md"
                 >
                   <option value="">Wähle ein Anliegen</option>
+                  <option value="Vertragscheck">1:1 Coaching</option>
                   <option value="Vertragscheck">Vertragscheck</option>
                   <option value="Investments">Investments</option>
                   <option value="Absicherung">Absicherung</option>

@@ -48,7 +48,7 @@ const Cards = () => {
       {/* Linker Bereich für den Text */}
       <div className="flex flex-col justify-center md:w-1/2 md:pr-8">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl text-left mb-8 text-web mt-20">
-        Du möchtest endlich deine Finanzen selbst in die Hand nehmen?
+        Du möchtest deine Finanzen selbst in die Hand nehmen?
         </h2>
 
         <div className="border-t-2 border-gray-300 my-8"></div>
