@@ -35,13 +35,16 @@ const Impressum = () => {
 
       <h2 className="text-2xl font-semibold mt-4 mb-2">Angaben zur Berufshaftpflichtversicherung</h2>
       <p>
-        Name und Sitz des Versicherers: <strong>[Berufshaftpflichtversicherung UNBEDINGT NOCH BEANTRAGEN!!!]</strong><br />
+        Name und Sitz des Versicherers:
+<p> R+V Versicherung AG</p>
+<p>Raiffeisenplatz 1</p>
+<p>65189 Wiesbaden</p>
         Geltungsraum der Versicherung: Deutschland
       </p>
 
       <h2 className="text-2xl font-semibold mt-4 mb-2">Registernummer als Versicherungsmakler</h2>
       <p>
-        Registrierungsnummer nach § 34d GewO: <strong>[bitte eintragen]</strong><br />
+        Registrierungsnummer nach § 34d GewO: D-7FKU-VK8H7-82
         Eintrag im Vermittlerregister: <a href="https://www.vermittlerregister.info" target="_blank" rel="noopener noreferrer" className="text-web underline">www.vermittlerregister.info</a>
       </p>
 
