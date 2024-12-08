@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./components/AboutMe2";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
@@ -8,7 +8,7 @@ import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import NavigationButtons from "./components/NavigationButtons";
 import FAQ from "./components/FAQ";
-import Kenstar from "./components/Kenstar"; // Importiere Kenstar
+import Aboutme from "./components/aboutme"; // Importiere aboutme
 import AGB from './components/AGB'; // Importiere AGB
 import Datenschutz from './components/Datenschutz'; // Importiere Datenschutz
 import Impressum from './components/Impressum'; // Importiere Impressum
@@ -40,7 +40,7 @@ const App = () => {
         />
 
         {/* Route für die eigenständige Kenstar-Seite */}
-        <Route path="/kenstar" element={<Kenstar />} />
+        <Route path="/aboutme" element={<Aboutme />} />
         <Route path="/AGB" element={<AGB />} /> {/* Route für AGB-Seite */}
         <Route path="/Datenschutz" element={<Datenschutz />} /> {/* Route für Datenschutz-Seite */}
         <Route path="/Impressum" element={<Impressum />} /> {/* Route für Impressum-Seite */}

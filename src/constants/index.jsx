@@ -1,7 +1,7 @@
 
 export const navItems = [
     { label: "Home", href:'/'},
-    { label: "About Me", href:'/kenstar'}
+    { label: "About Me", href:'/aboutme'}
 ]
 
 export const checklistItems = [
