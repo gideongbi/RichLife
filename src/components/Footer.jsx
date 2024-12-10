@@ -34,7 +34,7 @@ const Footer = () => {
                 <Link to="/" onClick={() => handleLinkClick("/")}>Home</Link>
               </li>
               <li>
-                <Link to="/kenstar" onClick={() => handleLinkClick("/kenstar")}>About Me</Link>
+                <Link to="/aboutme" onClick={() => handleLinkClick("/kenstar")}>About Me</Link>
               </li>
             </ul>
           </div>

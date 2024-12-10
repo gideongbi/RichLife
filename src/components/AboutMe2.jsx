@@ -60,7 +60,7 @@ const AboutMe = () => {
           <div className="flex justify-end mt-40">
             <button 
               className="bg-grund text-white px-6 py-3 rounded-full shadow-lg hover:bg-web transition duration-300"
-              onClick={() => handleLinkClick("/kenstar")}
+              onClick={() => handleLinkClick("/aboutme")}
             >
               Mehr erfahren
             </button>
